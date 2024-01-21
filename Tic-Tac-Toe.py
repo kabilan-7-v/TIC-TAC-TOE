@@ -1,7 +1,7 @@
 from tkinter import *
 import random
-n=input("X participate name:")
-m=input("O participate name:")
+n=input("X participate Name:")
+m=input("O participate Name:")
 flag=True    
 def next_turn(row, column):
 

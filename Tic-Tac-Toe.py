@@ -201,11 +201,12 @@ bottom_frame = Frame(
     height=1000
 )
 bottom_frame.place(x=265, y=300)
+exit_button = Button(window, text="Exit", font=('arial',15),width=8,height=1,command=window.destroy)
+exit_button.place(x=1200,y=0)
 for row in range(3):
     for column in range(3):
         buttons[row][column] = Button(bottom_frame, text="",font=('consolas',40), width=8, height=2,
                                     command= lambda row=row, column=column: next_turn(row,column))
         buttons[row][column].grid(row=row,column=column)
         
-if flag:
-    window.mainloop()
+window.mainloop()

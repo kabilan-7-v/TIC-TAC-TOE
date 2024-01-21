@@ -2,7 +2,7 @@ from tkinter import *
 import random
 n=input("X participate Name:")
 m=input("O participate Name:")
-flag=True    
+
 def next_turn(row, column):
 
     global player,X_wins,O_wins
